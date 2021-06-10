@@ -1,18 +1,24 @@
 import React from "react"
-import { Themed } from "theme-ui"
-
-/**
- * Change the content to add your own bio
- */
+import { useStaticQuery, graphql } from "gatsby"
 
 export default function Bio() {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            description
+          }
+        }
+      }
+    `
+  )
+
   return (
     <>
-      This is where <Themed.a href="http://example.com/">your name</Themed.a>
-      {` `}
-      goes.
+      { site.siteMetadata.description }
       <br />
-      Or whatever, you make the rules.
+      All views are my own.
     </>
   )
 }

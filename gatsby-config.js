@@ -1,17 +1,14 @@
 module.exports = {
   // Customize your site metadata:
   siteMetadata: {
-    title: `My Blog Title`,
-    author: `My Name`,
-    description: `My site description...`,
+    title: `josh aaseby`,
+    author: `Josh Aaseby`,
+    description: `A collection of my thoughts and writings.`,
+    siteUrl: "https://josh.ozbe.io",
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/gatsbyjs`,
-      },
-      {
-        name: `github`,
-        url: `https://github.com/gatsbyjs`,
+        url: `https://twitter.com/ozbe`,
       },
     ],
   },
@@ -19,6 +16,12 @@ module.exports = {
     {
       resolve: `gatsby-theme-blog`,
       options: {},
+    },
+    {
+      resolve: 'gatsby-plugin-theme-ui',
+      options: {
+        preset: '@theme-ui/preset-bootstrap',
+      },
     },
   ],
 }
