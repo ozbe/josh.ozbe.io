@@ -23,5 +23,11 @@ module.exports = {
         preset: '@theme-ui/preset-bootstrap',
       },
     },
+    {
+      resolve: `gatsby-plugin-goatcounter`,
+      options: {
+        code: 'josh',
+      }
+    },
   ],
 }
