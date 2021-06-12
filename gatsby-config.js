@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-theme-ui',
       options: {
-        preset: '@theme-ui/preset-bootstrap',
+        preset: '@theme-ui/preset-roboto',
       },
     },
     {
